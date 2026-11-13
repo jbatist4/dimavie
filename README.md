@@ -153,14 +153,6 @@ dimavie/
 
 ---
 
-## Contato do Site
-
-- **WhatsApp:** [(83) 98200-2424](https://wa.me/5583982002424)
-- **Instagram:** [@dimaviestays](https://www.instagram.com/dimaviestays/)
-- **Linktree:** [linktr.ee/dimaviehospedagem](https://linktr.ee/dimaviehospedagem)
-
----
-
 ## Créditos
 
 Desenvolvido por **Jorge Batista**.
