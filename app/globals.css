@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #FDFAF5;
+  --color-sand: #EBE0CC;
+  --color-sand-dark: #D4C4A8;
+  --color-ocean: #2E7DAF;
+  --color-ocean-dark: #1E5F8A;
+  --color-ocean-light: #EBF4FB;
+  --color-ocean-muted: #D4EAF5;
+  --color-gold: #9B7440;
+  --color-gold-dark: #7A5A2E;
+  --color-gold-light: #C4A06A;
+  --color-gold-muted: #F5EDDC;
+  --color-brown: #2A1F10;
+  --color-brown-light: #5A4020;
+  --color-brown-50: #F9F5EE;
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-brown);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(2deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-wave {
+  animation: wave 20s linear infinite;
+}
